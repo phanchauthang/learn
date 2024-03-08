@@ -1,13 +1,14 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
 
-function App() {
 
+const App = () => {
   return (
-    <div className="App">
-      <h1>Image Gallery</h1>
+    <div>
+      <Header title="Image Gallary"/>
     </div>
-  );
+  )
+};
 
-}
-
-export default App
+export default App;
