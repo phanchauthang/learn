@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
-import Search from './components/Search';
+import Searchs from './components/Searchs';
 import ImageCard from './components/ImageCard';
 import Welcome from './components/Welcome';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -32,9 +32,9 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div> 
       <Header title="Images Gallery" />
-      <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
+      <Searchs word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
       <Container className="mt-4">
         {images.length ? (
           <Row xs={1} md={2} lg={3}>
